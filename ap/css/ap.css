@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* *********************************************main css starts from here********************************************************* */
+
+
+/* setting margin and width for whole page*/
+.required-width{ width:100%;}
+.required-margin{ width: 1200px; margin: 0 auto;}
+/* end*/
+
+
+/*header styling starts here*/
+.main-container{ height:auto;position: relative;}
+
+
+.bannerimg  {position: relative;height:300px;width:100%;}
+.login-contact{height: auto;top:0px;background: rgba(0,0,0,0.7);  position: absolute;padding-bottom: 5px;}
+.nav  li i, .contact p i{color: #ffffff; font-size: 14px;   }
+.banner{  clear: both;height: auto;background: rgba(0,0,0,0.5); top:40px;position: absolute;}
+.logo{float:left;padding-bottom: 10px;padding-top: 10px;}
+/* top nav menu*/
+.rightnav{float:right;}
+.nav {list-style-type: none; }
+.nav li {float: left; font-size: 16px;    border: none;outline: none;color: #ffffff;}
+.nav li a {color: #ffffff;padding: 10px 15px ;text-decoration: none;} 
+.nav a:hover {background-color:#808080;}
+
+/* main menubar*/
+.navbar {  float: right; }
+.navbar ul { position: relative; }
+.navbar ul li { position: relative;float: left; }
+.navbar ul li a  { display:block; font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#ffffff; text-align:center; text-decoration:none; padding:40px 15px;}
+.navbar ul li:hover ul { display:block;}
+.navbar ul li ul { display:none; width:150px ; position:absolute; left:0; top:100%; background:#000000; z-index: 99; }
+.navbar ul li ul li{ width:100%; float:left; display:block; background:none; padding:0;}
+.navbar ul li ul li a{ text-align:left; padding:5px 10px;}
+.navbar ul li ul li a:hover{  background-color:#d3d3d3;}
+.navbar ul li i{font-size: 16px;color: #ffffff;}
+.navbar ul li:hover{background-color:#808080;}
+
+.contact{float: right;}
+.contact p{color:#ffffff;}
+
+ 
+/* sub-header starts*/
+.sub-header{clear: both;height: auto;position: absolute;bottom:2px;}
+.sh p{text-align: center;color:#ffffff;}
+/*header styling ends here*/
+
+/* global styling for <p> tag*/
+p{text-align: justify;}
+/*end of global styling for <p> tag*/
+
+/* styling gor body starts here*/
+/*styling for image and descripton part*/
+.description1 {margin-top: 10px;float:left;width:53%;height:auto;}
+.description2{width:45%;margin-left: 10px;float:right;height: auto;}
+.descrip {margin-top: 10px;font-size: 20px;color:#000000;font-weight: bold;}
+.list{margin-top:10px;}
+.list li{list-style:none;}
+div.description2 h2{border-bottom: 2px solid #000000;}
+/* end of styling for image and descripton part*/
+
+/*styling for image gallery*/
+.main-gallery{clear:both;  }
+.flexgallery{display:flex;flex-direction: row; margin-top: 10px;width:25%;}
+.gallerydesc {padding-top: 10px;font-weight: bold;}
+div.gallery {margin:5px  5px  5px 0;border: 1px solid #ccc;float: left;position: relative;}
+.hoverimg{opacity: 1;display: block;  }
+div.desc {padding: 15px;text-align: center;border:none; }
+.middle { opacity: 0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;}
+div.gallery:hover .hoverimg{opacity: 0.5; cursor: pointer;}
+div.gallery:hover .middle{opacity:1;cursor: pointer;}
+.gallery:hover .desc{background-color: #0000ff;cursor: pointer;}
+/*end of styling for image gallery*/
+/*styling for body ends here*/
+
+
+/*styling for main-footer*/
+.main-footer{background: #808080;margin-top: 10px; }
+div.mf{display: flex;flex-direction: row;height: auto;position: relative;}
+.aboutus-img{width:75px; height:75px ;float: left;margin-right:15px;}
+div.fc{margin:10px;width: 25%;}
+.button
+{background-color: #ff0000;border: none;color: #000000;}
+/*ends of styling for main-footer*/
+
+/* start of styling for sub-footer*/
+div.sub-footer{height:auto;position: absolute;background: #d3d3d3;padding-bottom: 10px;}
+.logosocial{margin: 5px; height: auto;}
+.logo_sf{float:left;}
+.social a{display: block;float:right;font-size: 40px;width: 40px;height:40px;text-align: center;text-decoration: none;margin: 5px;}
+.fa{opacity: 0.5;color: #000000;}
+.fa:hover {opacity: 1;color: #ffffff;} 
+.fa-facebook:hover {background: #3B5998;}
+.fa-twitter:hover {background: #55ACEE;}
+.fa-google:hover {background: #dd4b39;}
+.fa-linkedin:hover {background: #007bb5;}
+.fa-youtube:hover {background: #bb0000;}
+.fa-instagram:hover {background: #125688;}
+.fc h3{font-size: 16px;font-weight: bold;}
+.fc i{float:left;}
+.label{margin-top:10px;}
+.tweet{margin-left: 20px;}
+a{color: #ff0000;text-decoration: none;}
+.copynav{clear: both;padding-top: 10px ;}
+.copy{float:left;}
+
+/*footer navbar*/
+.navbar_sf{float:right;}
+.navbar_sf ul {list-style-type: none;}
+.navbar_sf li {float: left;}
+.navbar_sf li a {color: #000000;text-align: center;padding: 14px 16px;text-decoration: none;}
+.navbar_sf li a:hover {color:#ff0000;}
+/*end of styling for sub-footer*/
