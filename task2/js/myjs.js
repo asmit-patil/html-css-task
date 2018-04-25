@@ -156,3 +156,11 @@ function focusMethod(){
     document.getElementById("help").focus();
   
 }
+// function checkMail(){
+//   var emailreg = /^[w-.+]+@[a-zA-Z0-9.-]+.[a-zA-z0-9]{2,4}$/;
+//   var mail=document.getElementById("mail").value;
+//   if(!mail.match(emailreg)){
+//     document.getElementById("p1").innerHTML="Enter valid Email";
+//     return false;
+//    }
+// }
